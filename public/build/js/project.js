@@ -1,0 +1,1 @@
+!function(){const e=document.querySelectorAll(".edit");document.querySelectorAll(".delete");e.forEach(e=>{e.addEventListener("click",(function(){}))})}();
