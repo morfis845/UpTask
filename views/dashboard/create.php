@@ -2,7 +2,7 @@
 
     <div class="container-sm">
         <?php include_once __DIR__.'/../templates/alerts.php'; ?>
-        <form action="/create" class="form" method="POST">
+        <form action="/create-project" class="form" method="POST">
 
         <?php include_once __DIR__.'/form.php' ?>
         <input type="submit" value="Crear Proyecto">

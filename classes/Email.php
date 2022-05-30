@@ -23,8 +23,8 @@ class Email
         $phpmailer->Host = 'smtp.mailtrap.io';
         $phpmailer->SMTPAuth = true;
         $phpmailer->Port = 2525;
-        $phpmailer->Username = 'f65cc79a5c7bae';
-        $phpmailer->Password = '44da01dd987367';
+        $phpmailer->Username = '00ced5c4346a2c';
+        $phpmailer->Password = 'ba665b456f32e5';
 
         $phpmailer->setFrom('cuentas@uptask.com');
         $phpmailer->addAddress('cuentas@uptask.com', 'uptask.com');
@@ -34,7 +34,7 @@ class Email
 
         $content = '<html>';
         $content .= '<p><strong>Hola '.$this->name.'</strong> Haz Creado tu cuenta en UpTask, solo debes confirmarla en el siguiente enlace</p>';
-        $content .= '<p>Presiona aquí: <a href="http://localhost:3000/confirm-account?token='.$this->token.'">Confirmar Cuenta</a></p>';
+        $content .= '<p>Presiona aquí: <a href="http://localhost:3001/confirm-account?token='.$this->token.'">Confirmar Cuenta</a></p>';
         $content .= '<p>Si tu no creaste  esta cuenta, puedes ignorar este mensaje</p>';
         $content .= '</html>';
         $phpmailer->Body = $content;
@@ -47,8 +47,8 @@ class Email
         $phpmailer->Host = 'smtp.mailtrap.io';
         $phpmailer->SMTPAuth = true;
         $phpmailer->Port = 2525;
-        $phpmailer->Username = 'f65cc79a5c7bae';
-        $phpmailer->Password = '44da01dd987367';
+        $phpmailer->Username = '00ced5c4346a2c';
+        $phpmailer->Password = 'ba665b456f32e5';
 
         $phpmailer->setFrom('cuentas@uptask.com');
         $phpmailer->addAddress('cuentas@uptask.com', 'uptask.com');
@@ -58,7 +58,7 @@ class Email
 
         $content = '<html>';
         $content .= '<p><strong>Hola '.$this->name.'</strong> Haz click en el siguiente enlace para cambiar tu contraseña.</p>';
-        $content .= '<p>Presiona aquí: <a href="http://localhost:3000/restore?token='.$this->token.'">Cambiar Contraseña</a></p>';
+        $content .= '<p>Presiona aquí: <a href="http://localhost:3001/restore?token='.$this->token.'">Cambiar Contraseña</a></p>';
         $content .= '<p>Si tu no solicitaste este cambio, puedes ignorar este mensaje</p>';
         $content .= '</html>';
         $phpmailer->Body = $content;
